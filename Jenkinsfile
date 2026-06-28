@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/nodejs-cicd"
+        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/nodejs"
         CONTAINER_NAME = "nodejs-app"
     }
 
@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'YOUR_GITHUB_REPOSITORY_URL'
+                url: 'https://github.com/dhanushharsh/PRO-1.git'
             }
         }
 
