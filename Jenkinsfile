@@ -3,7 +3,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "YOUR_DOCKERHUB_USERNAME/nodejs"
+        IMAGE_NAME = "harsh672/nodejs"
         CONTAINER_NAME = "nodejs-app"
     }
 
